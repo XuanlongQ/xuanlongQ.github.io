@@ -15,19 +15,23 @@
 </ul>
 <h2 id="Others"><a href="#Others" class="headerlink" title="Others"></a>Others</h2><p><strong>Note: I won’t take on any duties as a teaching assistant in the following two years (2024-2026) since the funding from the CSS fellowship.</strong></p>
 </article></div></main><div class="nav-wrap"><div class="nav"><button class="site-nav"><div class="navicon"></div></button><ul class="nav_items"><li class="nav_item"><a class="nav-page" href="/Media"> Media</a></li><li class="nav_item"><a class="nav-page" href="/Others"> Others</a></li></ul></div><div class="cd-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></div></div><footer id="page_footer"><style>.footer-wrapper {
-    /* --- 修改重点：背景透明，去边框 --- */
-    background: transparent; /* 原为 #f8f9fa，改为透明以融入背景 */
-    border-top: none;        /* 原为 1px solid #eaeaea，改为 none 去掉分割线 */
+    background: transparent;
+    border-top: none;
     
-    padding: 3rem 2rem;
-    margin-top: 4rem;
+    /* --- 关键修改：消除缝隙 --- */
+    margin-top: 0;       /* 原为 4rem，改为 0，去掉与上方内容的距离 */
+    padding-top: 0;      /* 原为 3rem，改为 0，去掉内部上方的空白 */
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .footer-content-flex {
     display: flex;
     align-items: center; 
-    justify-content: center; /* 保持居中 */
+    justify-content: center;
     gap: 60px;
     flex-wrap: wrap;
     max-width: 1200px;
@@ -39,6 +43,8 @@
     background: transparent;
     padding: 0;
     text-align: center;
+    /* 如果地球上方自带空白，可以用负边距往上提 */
+    /* margin-top: -20px; */ 
 }
 
 .contact-info-box {
@@ -78,9 +84,8 @@
 }
 
 .footer-bottom-bar {
-    margin-top: 2rem;
+    margin-top: 1rem; /* 底部版权信息的间距也可以适当减小 */
     padding-top: 1rem;
-    /* 如果想让底部版权线也消失，把下面这行改为 border-top: none; */
     border-top: 1px solid #e0e0e0; 
     color: #6c757d;
     font-size: 0.85rem;

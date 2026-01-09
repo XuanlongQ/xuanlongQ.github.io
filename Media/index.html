@@ -1,19 +1,23 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>Homepage - Xuanlong QIN</title><meta name="author" content="Xuanlong QIN"><link rel="shortcut icon" href="/img/favicon.png"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><meta name="generator" content="Hexo 7.1.1"></head><body><header id="page_header"><div class="header_wrap"><div id="blog_name"><a class="blog_title" id="site-name" href="/">Homepage - Xuanlong QIN</a></div><button class="menus_icon"><div class="navicon"></div></button><ul class="menus_items"><li class="menus_item"><a class="site-page" href="/Media"> Media</a></li><li class="menus_item"><a class="site-page" href="/Others"> Others</a></li></ul></div></header><main id="page_main"><div class="side-card sticky"><div class="card-wrap" itemscope itemtype="http://schema.org/Person"><div class="author-avatar"><img class="avatar-img" src="/img/portraits.png" onerror="this.onerror=null;this.src='/img/profile.png'" alt="avatar"></div><div class="author-discrip"><h3>Xuanlong QIN</h3><p class="author-bio">&quot; Life is a process of becoming, a combination of states we have to go through. &quot; - Anais Nin</p></div><div class="author-links"><button class="btn m-social-links">Links</button><ul class="social-icons"><li><a class="social-icon" href="https://github.com/XuanlongQ" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a></li><li><a class="social-icon" href="https://sites.google.com/view/alizadeh-gallery/gallery" target="_blank"><i class="fas fa-rss" aria-hidden="true"></i></a></li></ul><ul class="social-links"><li><a class="e-social-link" href="https://scholar.google.com/citations?user=4i-Ksl4AAAAJ&amp;hl=en&amp;oi=ao" target="_blank"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span>Google Scholar</span></a></li><li><a class="e-social-link" href="https://orcid.org/0000-0002-9700-0722" target="_blank"><i class="fab fa-orcid" aria-hidden="true"></i><span>ORCID</span></a></li></ul></div></div></div><div class="page" itemscope itemtype="http://schema.org/CreativeWork"><h2 class="page-title">Social Media</h2><article><p>[09&#x2F;2025]: The birding photo of night heron is selected as excellect photo and published on <a target="_blank" rel="noopener" href="https://www.instagram.com/p/DPAyw3LE03R/?utm_source=ig_web_copy_link&igsh=MXdneDI2NTJuMXBxeA==">“Mountain City · Glimpses” Chinese University of Hong Kong Photography Competition 2025</a> :star2:</p>
 <p>[08&#x2F;2025]:The article <a target="_blank" rel="noopener" href="https://www.growkudos.com/publications/10.23919%252Fjsc.2025.0010/reader">“Embedding Social Perception Dimensions in a Semantic Space”</a> has been selected to appear in the Tsinghua University Press Showcase on Kudos.</p>
 </article></div></main><div class="nav-wrap"><div class="nav"><button class="site-nav"><div class="navicon"></div></button><ul class="nav_items"><li class="nav_item"><a class="nav-page" href="/Media"> Media</a></li><li class="nav_item"><a class="nav-page" href="/Others"> Others</a></li></ul></div><div class="cd-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></div></div><footer id="page_footer"><style>.footer-wrapper {
-    /* --- 修改重点：背景透明，去边框 --- */
-    background: transparent; /* 原为 #f8f9fa，改为透明以融入背景 */
-    border-top: none;        /* 原为 1px solid #eaeaea，改为 none 去掉分割线 */
+    background: transparent;
+    border-top: none;
     
-    padding: 3rem 2rem;
-    margin-top: 4rem;
+    /* --- 关键修改：消除缝隙 --- */
+    margin-top: 0;       /* 原为 4rem，改为 0，去掉与上方内容的距离 */
+    padding-top: 0;      /* 原为 3rem，改为 0，去掉内部上方的空白 */
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .footer-content-flex {
     display: flex;
     align-items: center; 
-    justify-content: center; /* 保持居中 */
+    justify-content: center;
     gap: 60px;
     flex-wrap: wrap;
     max-width: 1200px;
@@ -25,6 +29,8 @@
     background: transparent;
     padding: 0;
     text-align: center;
+    /* 如果地球上方自带空白，可以用负边距往上提 */
+    /* margin-top: -20px; */ 
 }
 
 .contact-info-box {
@@ -64,9 +70,8 @@
 }
 
 .footer-bottom-bar {
-    margin-top: 2rem;
+    margin-top: 1rem; /* 底部版权信息的间距也可以适当减小 */
     padding-top: 1rem;
-    /* 如果想让底部版权线也消失，把下面这行改为 border-top: none; */
     border-top: 1px solid #e0e0e0; 
     color: #6c757d;
     font-size: 0.85rem;
