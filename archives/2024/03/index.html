@@ -22,38 +22,40 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+/* --- 修改重点 1：布局居中 --- */
 .footer-content-flex {
     display: flex;
     align-items: center; 
-    justify-content: flex-start;
-    gap: 60px; /* 增加一点间距，让布局更舒展 */
+    justify-content: center; /* 将 flex-start 改为 center，实现水平居中 */
+    gap: 60px;
     flex-wrap: wrap;
+    max-width: 1200px; /* 限制最大宽度，防止在大屏幕上太散 */
+    margin: 0 auto;    /* 容器自身居中 */
 }
 
 .map-container {
     flex-shrink: 0;
     background: transparent;
     padding: 0;
-    /* 这里不需要改 CSS 大小，直接改下面 script 里的 w 参数即可 */
+    text-align: center; /* 确保地球在自己的容器里也是居中的 */
 }
 
-/* --- 修改重点：放大文字 --- */
 .contact-info-box {
-    text-align: left;
+    text-align: left; /* 保持文字内容左对齐，阅读体验更好 */
     color: #4a4a4a;
-    font-size: 1.1rem; /* 从 0.95rem 增大到 1.1rem */
-    line-height: 1.8;  /* 增加行高，让大字看起来更舒服 */
-    max-width: 600px;  /* 稍微放宽容器宽度 */
+    font-size: 1.1rem; 
+    line-height: 1.8;
+    max-width: 600px;
 }
 
 .contact-section {
-    margin-bottom: 2rem; /* 增加段落间距 */
+    margin-bottom: 2rem;
 }
 
 .contact-title {
     font-weight: 700;
     color: #2c3e50;
-    font-size: 1.25rem; /* 标题字号加大 */
+    font-size: 1.25rem;
     margin-bottom: 0.5rem;
     display: block;
 }
@@ -61,7 +63,7 @@
 .contact-detail {
     display: block;
     color: #555;
-    font-size: 1.1rem; /* 详情字号加大 */
+    font-size: 1.1rem;
 }
 
 .contact-detail a {
@@ -74,13 +76,14 @@
     color: #0056b3;
 }
 
+/* 底部版权栏也居中 */
 .footer-bottom-bar {
     margin-top: 2rem;
     padding-top: 1rem;
     border-top: 1px solid #e0e0e0;
     color: #6c757d;
     font-size: 0.85rem;
-    text-align: center;
+    text-align: center; /* 让底部的版权信息也居中 */
 }
 .footer-bottom-bar a {
     color: #6c757d;
