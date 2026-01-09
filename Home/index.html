@@ -10,27 +10,26 @@
 </li>
 </ul>
 </article></div></main><div class="nav-wrap"><div class="nav"><button class="site-nav"><div class="navicon"></div></button><ul class="nav_items"><li class="nav_item"><a class="nav-page" href="/Media"> Media</a></li><li class="nav_item"><a class="nav-page" href="/Others"> Others</a></li></ul></div><div class="cd-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></div></div><footer id="page_footer"><style>.footer-wrapper {
-    background: #f8f9fa; /* 浅灰背景，区分正文 */
-    padding: 3rem 1rem;
+    background: #f8f9fa; /* Footer 背景色 */
+    padding: 3rem 2rem;
     margin-top: 4rem;
     border-top: 1px solid #eaeaea;
-    text-align: center;
+    text-align: left; /* 【关键】左对齐 */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 .map-container {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     display: inline-block;
-    padding: 10px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08); /* 添加柔和阴影 */
+    /* 【关键】移除了 background: #fff 和 box-shadow，去掉了白色卡片背景 */
+    background: transparent; 
+    padding: 0;
     transition: transform 0.3s ease;
 }
 .map-container:hover {
-    transform: translateY(-5px); /* 鼠标悬停轻微上浮 */
+    transform: translateY(-5px);
 }
 .footer-info {
-    color: #6c757d; /* 次级文本颜色，不要用纯黑 */
+    color: #6c757d;
     font-size: 0.9rem;
     line-height: 1.8;
 }
@@ -39,13 +38,13 @@
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s;
-    margin: 0 4px;
+    margin-right: 8px;
 }
 .footer-info a:hover {
-    color: #007bff; /* 链接悬停色 */
+    color: #007bff;
     text-decoration: underline;
 }
 .copyright-year {
     font-weight: 600;
 }
-</style><div class="footer-wrapper"><div class="map-container"><script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=080808&amp;w=300&amp;t=tt&amp;d=fZRssCy1RjBkfa4mIa0VrxsQ3a2f4VaO3r1uXbo8wtM&amp;co=2d8cf0&amp;cmo=3acc3a&amp;cmn=ff5353&amp;ct=808080"></script></div><div class="footer-info"><div><span class="copyright">&copy; 2020 - <span class="copyright-year">2026</span> <i class="fa fa-heart" style="color:red; margin: 0 4px;"></i> Xuanlong QIN</span></div><div style="margin-top: 8px;"><span>Powered by </span><a href="https://hexo.io" rel="nofollow" target="_blank">Hexo</a><span>& </span><a href="https://github.com/PhosphorW/hexo-theme-academia" rel="nofollow" target="_blank">Academia Theme</a></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery-pjax@latest/jquery.pjax.min.js"></script><script src="/js/main.js"></script></body></html>
+</style><div class="footer-wrapper"><div class="map-container"><script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=fZRssCy1RjBkfa4mIa0VrxsQ3a2f4VaO3r1uXbo8wtM&amp;cl=f8f9fa&amp;w=300"></script></div><div class="footer-info"><div><span class="copyright">&copy; 2020 - <span class="copyright-year">2026</span> Xuanlong QIN</span></div><div style="margin-top: 8px;"><span>Powered by </span><a href="https://hexo.io" rel="nofollow" target="_blank">Hexo</a><span>& </span><a href="https://github.com/PhosphorW/hexo-theme-academia" rel="nofollow" target="_blank">Academia Theme</a></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery-pjax@latest/jquery.pjax.min.js"></script><script src="/js/main.js"></script></body></html>
