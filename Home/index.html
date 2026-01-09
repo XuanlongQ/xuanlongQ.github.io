@@ -10,56 +10,53 @@
 </li>
 </ul>
 </article></div></main><div class="nav-wrap"><div class="nav"><button class="site-nav"><div class="navicon"></div></button><ul class="nav_items"><li class="nav_item"><a class="nav-page" href="/Media"> Media</a></li><li class="nav_item"><a class="nav-page" href="/Others"> Others</a></li></ul></div><div class="cd-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></div></div><footer id="page_footer"><style>.footer-wrapper {
-    background: #f8f9fa; /* Footer 背景色 */
+    background: #f8f9fa;
     padding: 3rem 2rem;
     margin-top: 4rem;
     border-top: 1px solid #eaeaea;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-/* 新增：Flex 容器，用于左右分栏 */
 .footer-content-flex {
     display: flex;
-    align-items: center; /* 垂直居中对齐 */
-    justify-content: flex-start; /* 左对齐 */
-    gap: 40px; /* 地球和文字之间的间距 */
-    flex-wrap: wrap; /* 手机屏幕窄时自动换行 */
+    align-items: center; 
+    justify-content: flex-start;
+    gap: 60px; /* 增加一点间距，让布局更舒展 */
+    flex-wrap: wrap;
 }
 
-/* 地球容器样式 */
 .map-container {
-    flex-shrink: 0; /* 防止地球被挤压变形 */
+    flex-shrink: 0;
     background: transparent;
     padding: 0;
-    transition: transform 0.3s ease;
-}
-.map-container:hover {
-    transform: translateY(-5px);
+    /* 这里不需要改 CSS 大小，直接改下面 script 里的 w 参数即可 */
 }
 
-/* 新增：右侧联系信息样式 */
+/* --- 修改重点：放大文字 --- */
 .contact-info-box {
     text-align: left;
     color: #4a4a4a;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    max-width: 500px; /* 限制文字最大宽度，防止太长 */
+    font-size: 1.1rem; /* 从 0.95rem 增大到 1.1rem */
+    line-height: 1.8;  /* 增加行高，让大字看起来更舒服 */
+    max-width: 600px;  /* 稍微放宽容器宽度 */
 }
 
 .contact-section {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem; /* 增加段落间距 */
 }
 
 .contact-title {
     font-weight: 700;
     color: #2c3e50;
-    margin-bottom: 0.25rem;
+    font-size: 1.25rem; /* 标题字号加大 */
+    margin-bottom: 0.5rem;
     display: block;
 }
 
 .contact-detail {
     display: block;
     color: #555;
+    font-size: 1.1rem; /* 详情字号加大 */
 }
 
 .contact-detail a {
@@ -72,7 +69,6 @@
     color: #0056b3;
 }
 
-/* 原有的底部版权栏样式，保持不变 */
 .footer-bottom-bar {
     margin-top: 2rem;
     padding-top: 1rem;
@@ -91,4 +87,4 @@
 .copyright-year {
     font-weight: 600;
 }
-</style><div class="footer-wrapper"><div class="footer-content-flex"><div class="map-container"><script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=fZRssCy1RjBkfa4mIa0VrxsQ3a2f4VaO3r1uXbo8wtM&amp;cl=f8f9fa&amp;w=300"></script></div><div class="contact-info-box"><div class="contact-section"><span class="contact-title">Office Address:</span><span class="contact-detail">Room, 421, Sino Building, Department of Sociology,</span><span class="contact-detail">Chinese University of Hong Kong,</span><span class="contact-detail">Sha Tin, N.T., Hong Kong.</span></div><div class="contact-section"><span class="contact-title">Email Address:</span><span class="contact-detail"><a href="mailto:xuanlong@cuhk.edu.hk">xuanlong@cuhk.edu.hk</a></span></div></div></div><div class="footer-bottom-bar"><div><span class="copyright">&copy; 2020 - <span class="copyright-year">2026</span> Xuanlong QIN</span></div><div style="margin-top: 5px;"><span>Powered by </span><a href="https://hexo.io" rel="nofollow" target="_blank">Hexo</a><span>&nbsp;&&nbsp;</span><a href="https://github.com/PhosphorW/hexo-theme-academia" rel="nofollow" target="_blank">Academia Theme</a></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery-pjax@latest/jquery.pjax.min.js"></script><script src="/js/main.js"></script></body></html>
+</style><div class="footer-wrapper"><div class="footer-content-flex"><div class="map-container"><script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=fZRssCy1RjBkfa4mIa0VrxsQ3a2f4VaO3r1uXbo8wtM&amp;cl=f8f9fa&amp;w=200"></script></div><div class="contact-info-box"><div class="contact-section"><span class="contact-title">Office Address:</span><span class="contact-detail">Room 421, Sino Building, Department of Sociology,</span><span class="contact-detail">Chinese University of Hong Kong,</span><span class="contact-detail">Sha Tin, N.T., Hong Kong.</span></div><div class="contact-section"><span class="contact-title">Email Address:</span><span class="contact-detail"><a href="mailto:xuanlong@cuhk.edu.hk">xuanlong@cuhk.edu.hk</a></span></div></div></div><div class="footer-bottom-bar"><div><span class="copyright">&copy; 2020 - <span class="copyright-year">2026</span> Xuanlong QIN</span></div><div style="margin-top: 5px;"><span>Powered by </span><a href="https://hexo.io" rel="nofollow" target="_blank">Hexo</a><span>&nbsp;&&nbsp;</span><a href="https://github.com/PhosphorW/hexo-theme-academia" rel="nofollow" target="_blank">Academia Theme</a></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery-pjax@latest/jquery.pjax.min.js"></script><script src="/js/main.js"></script></body></html>
