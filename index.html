@@ -14,11 +14,22 @@
 <li>[12&#x2F;2024]: Two abstracts were accepted to the Research Committees session “New Approaches to Measuring Social Trust” at the 5th <a target="_blank" rel="noopener" href="https://www.isa-sociology.org/en/conferences/forum/rabat-2025">ISA Forum of Sociology</a>.</li>
 </ul>
 <h2 id="Others"><a href="#Others" class="headerlink" title="Others"></a>Others</h2><p><strong>Note: I won’t take on any duties as a teaching assistant in the following two years (2024-2026) since the funding from the CSS fellowship.</strong></p>
-</article></div></main><div class="nav-wrap"><div class="nav"><button class="site-nav"><div class="navicon"></div></button><ul class="nav_items"><li class="nav_item"><a class="nav-page" href="/Media"> Media</a></li><li class="nav_item"><a class="nav-page" href="/Others"> Others</a></li></ul></div><div class="cd-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></div></div><footer id="page_footer"><style>.footer-wrapper {
-    /* --- 修改重点：背景透明，去边框 --- */
-    background: transparent; /* 原为 #f8f9fa，改为透明以融入背景 */
-    border-top: none;        /* 原为 1px solid #eaeaea，改为 none 去掉分割线 */
-    
+</article></div></main><div class="nav-wrap"><div class="nav"><button class="site-nav"><div class="navicon"></div></button><ul class="nav_items"><li class="nav_item"><a class="nav-page" href="/Media"> Media</a></li><li class="nav_item"><a class="nav-page" href="/Others"> Others</a></li></ul></div><div class="cd-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></div></div><footer id="page_footer"><style>/* 覆盖主题默认的 footer 背景 */
+#page_footer,
+footer#page_footer,
+footer {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-top: none !important;
+}
+
+.footer-wrapper {
+    background: transparent;
+    border-top: none;
+    border: none;
+    box-shadow: none;
     padding: 3rem 2rem;
     margin-top: 4rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -27,7 +38,7 @@
 .footer-content-flex {
     display: flex;
     align-items: center; 
-    justify-content: center; /* 保持居中 */
+    justify-content: center;
     gap: 60px;
     flex-wrap: wrap;
     max-width: 1200px;
@@ -80,7 +91,6 @@
 .footer-bottom-bar {
     margin-top: 2rem;
     padding-top: 1rem;
-    /* 如果想让底部版权线也消失，把下面这行改为 border-top: none; */
     border-top: 1px solid #e0e0e0; 
     color: #6c757d;
     font-size: 0.85rem;
