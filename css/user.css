@@ -660,37 +660,30 @@ ul.news-list .news-item::before,
 }
 
 
-/* ---------- visitor counter (Flag Counter, image embed) ---------- */
+/* ---------- visitor table (Flag Counter, image embed) ---------- */
 .footer-bottom-bar {
   align-items: center;
-}
-
-.visitor-strip {
-  display: flex;
-  justify-content: center;
-  margin: 0 0 1.8rem;
 }
 
 .visitor-badge {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
 }
 
 .visitor-badge img {
   display: block;
-  width: 400px;
+  width: 388px;
   max-width: 100%;
   height: auto;
   border: 0;
 }
 
 @media (max-width: 34em) {
-  .visitor-strip {
-    margin-bottom: 1.2rem;
-  }
-
   .visitor-badge {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0.9rem 0;
   }
 
   .visitor-badge img {
