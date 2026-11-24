@@ -658,3 +658,32 @@ ul.news-list .news-item::before,
 .page-title::after {
   display: none;
 }
+
+
+/* ---------- visitor counter (Flag Counter, image embed) ---------- */
+.footer-bottom-bar {
+  align-items: center;
+}
+
+.visitor-badge {
+  display: inline-flex;
+  align-items: center;
+}
+
+.visitor-badge img {
+  display: block;
+  width: 388px;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+@media (max-width: 34em) {
+  .visitor-badge {
+    margin: 0.9rem 0;
+  }
+
+  .visitor-badge img {
+    width: 100%;
+  }
+}

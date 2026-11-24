@@ -30,6 +30,14 @@
 
 显示尺寸在 `css/user.css` 的 `.author-avatar`(桌面 176px)和 `@media (max-width: 60em)`(手机 104px)里调整。
 
+## 访客统计
+
+页脚的国家旗计数器来自 [Flag Counter](https://flagcounter.com/):免注册、按国家累计访客,并显示总浏览量。它是第三方图片,不依赖 JavaScript。
+
+- 图片 URL 在每页的 `.visitor-badge` 里,当前计数器 ID 是 `xqlongqin2026`
+- 可调参数:`bg_FFFFFF` 背景、`txt_333333` 文字、`border_FFFFFF` 边框、`columns_4` 列数、`maxflags_8` 最多展示国家数
+- 更换计数器 ID 或样式时直接改 URL;如果所在网络访问不了 flagcounter.com,图片可能不显示
+
 ## 调整样式
 
 当前是**平铺 / 嵌入式**排版:没有卡片、阴影、圆角和胶囊标签,内容直接排在页面上。
