@@ -665,6 +665,12 @@ ul.news-list .news-item::before,
   align-items: center;
 }
 
+.visitor-strip {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 1.8rem;
+}
+
 .visitor-badge {
   display: inline-flex;
   align-items: center;
@@ -672,15 +678,19 @@ ul.news-list .news-item::before,
 
 .visitor-badge img {
   display: block;
-  width: 388px;
+  width: 400px;
   max-width: 100%;
   height: auto;
   border: 0;
 }
 
 @media (max-width: 34em) {
+  .visitor-strip {
+    margin-bottom: 1.2rem;
+  }
+
   .visitor-badge {
-    margin: 0.9rem 0;
+    width: 100%;
   }
 
   .visitor-badge img {

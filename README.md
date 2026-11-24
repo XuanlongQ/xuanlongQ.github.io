@@ -32,11 +32,12 @@
 
 ## 访客统计
 
-页脚的国家旗计数器来自 [Flag Counter](https://flagcounter.com/):免注册、按国家累计访客,并显示总浏览量。它是第三方图片,不依赖 JavaScript。
+页脚的世界地图计数器来自 [Flag Counter](https://flagcounter.com/):免注册、按国家累计访客,国旗会直接标在地图上,底部显示收集到的国旗数和 pageviews。它是第三方图片,不依赖 JavaScript。
 
 - 图片 URL 在每页的 `.visitor-badge` 里,当前计数器 ID 是 `xqlongqin2026`
-- 可调参数:`bg_FFFFFF` 背景、`txt_333333` 文字、`border_FFFFFF` 边框、`columns_4` 列数、`maxflags_8` 最多展示国家数
-- 更换计数器 ID 或样式时直接改 URL;如果所在网络访问不了 flagcounter.com,图片可能不显示
+- 地图地址:`.../map/xqlongqin2026/size_s/txt_333333/border_FFFFFF/pageviews_1/viewers_0/`
+- 可调参数:`size_s`/`size_m`/`size_l` 尺寸、`txt_333333` 文字色、`border_FFFFFF` 边框色;换 ID 或样式直接改 URL
+- 如果所在网络访问不了 flagcounter.com,地图可能不显示
 
 ## 调整样式
 
