@@ -26,12 +26,9 @@
 
 ## 换头像
 
-头像文件是 `img/portraits.jpg`(正方形,当前 600×600),页面上显示为圆形;加载失败时回退到 `img/profile.jpg`。替换时保持文件名不变即可,建议:
+头像文件是 `img/portraits.png`(黑白线稿,1024×1024),页面上显示为圆形;加载失败时回退到 `img/profile.png`。替换时保持文件名不变即可,建议使用正方形图片(边长 600–1024px)。
 
-- 裁成 1:1 正方形,边长 600–800px
-- 导出 JPEG(质量 85–90,约 60–120KB),不要直接放几 MB 的原图
-
-显示尺寸在 `css/user.css` 的 `.author-avatar`(桌面 176px)和 `@media (max-width: 60em)`(手机 104px)里调整。旧的卡通头像 `img/portraits.png` / `img/profile.png` 仍保留作备份。
+显示尺寸在 `css/user.css` 的 `.author-avatar`(桌面 176px)和 `@media (max-width: 60em)`(手机 104px)里调整。
 
 ## 调整样式
 
