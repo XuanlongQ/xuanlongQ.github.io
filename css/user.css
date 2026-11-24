@@ -184,14 +184,14 @@ body {
 }
 
 .author-avatar {
-  width: 84px;
-  height: 84px;
-  margin: 0 0 1.3rem;
+  width: 120px;
+  height: 120px;
+  margin: 0 0 1.5rem;
 }
 
 .author-avatar .avatar-img {
-  width: 84px;
-  height: 84px;
+  width: 120px;
+  height: 120px;
   border: 0;
   outline: 0;
   border-radius: 50%;
@@ -537,14 +537,14 @@ ul.news-list .news-item::before,
   }
 
   .author-avatar {
-    width: 68px;
-    height: 68px;
+    width: 88px;
+    height: 88px;
     margin: 0;
   }
 
   .author-avatar .avatar-img {
-    width: 68px;
-    height: 68px;
+    width: 88px;
+    height: 88px;
   }
 
   .author-discrip {
